@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Malak | Data Analyst Portfolio</title>
+    <!-- تأكد أن ملف الـ CSS بجانب الـ HTML مباشرة في الفولدر الرئيسي -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* إضافة الـ Smooth Scroll اللي طلبته هنا لضمان العمل */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
     <div class="background-blobs"></div>
-<nav>
-    <div class="logo">Amir <span>Malak</span></div>
-    
-    <!-- النص بقى فاضي تماماً -->
-    
-    <div class="nav-actions">
-        <a href="#projects" class="nav-link-item">Projects</a>
-        <a href="#skills" class="nav-link-item">Skills</a>
-        <!-- لينك السي في بتاعك -->
-        <a href="https://drive.google.com/file/d/1X0H7AjK2dc7JFS-prNz2ZNzKMy2FHl_L/view?usp=sharing" 
-           target="_blank" class="cv-nav-btn">CV</a>
-    </div>
-</nav>
+    <nav>
+        <div class="logo">Amir <span>Malak</span></div>
+        <div class="nav-actions">
+            <a href="#projects" class="nav-link-item">Projects</a>
+            <a href="#skills" class="nav-link-item">Skills</a>
+            <a href="https://drive.google.com/file/d/1X0H7AjK2dc7JFS-prNz2ZNzKMy2FHl_L/view?usp=sharing" 
+               target="_blank" class="cv-nav-btn">CV</a>
+        </div>
+    </nav>
 
     <header>
         <div class="star-container">
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-</div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
         <div class="hero">
             <span class="badge">Available for Projects</span>
             <h1>Turning Data Into <span>Impact.</span></h1>
@@ -41,8 +44,7 @@
     </header>
 
     <main class="container">
-        
-        <!-- SECTION 1: TOOLKIT (Skills - 4 Left, 4 Right) -->
+        <!-- SECTION 1: SKILLS -->
         <section id="skills">
             <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-split-container">
@@ -85,185 +87,156 @@
             </div>
         </section>
 
-        <!-- SECTION 2: PROJECTS (6 Cards Grid) -->
+        <!-- SECTION 2: PROJECTS -->
         <section id="projects">
             <h2 class="section-title">Featured Work</h2>
             <div class="projects-grid">
                 
-                <!-- Project 1: Airbnb Analysis (Updated) -->
-               <!-- Project 1: Airbnb -->
-<div class="glass-card project">
-    <div class="project-content">
-        <span class="category">Python Project</span>
-        <h3>Airbnb Insights Analysis</h3>
-        <p>Analyzed 20,000+ listings with price trend visualizations.</p>
-
+                <!-- Project 1: Airbnb -->
+                <div class="glass-card project">
+                    <div class="project-content">
+                        <span class="category">Python Project</span>
+                        <h3>Airbnb Insights Analysis</h3>
+                        <p>Analyzed 20,000+ listings with price trend visualizations.</p>
                         <div class="tech-stack">
-            <span>python</span> <span>Pandas</span> <span>numpy</span>
-        </div>
-        <!-- هنا بنضيف كذا صورة في مصفوفة واحدة -->
-        <a href="javascript:void(0)" class="project-link" 
-           onclick="openModal('Airbnb Manhattan Analysis', 
-           ['Screenshot 2026-05-04 160209.png', 'Screenshot 2026-05-04 161256.png', 'Screenshot 2026-05-04 161211.png', 'Screenshot 2026-05-04 161007.png', 'Screenshot 2026-05-04 160826.png'], 
-           'Detailed insights from cleaning to geographic price distribution.')">
-           View Analysis →
-        </a>
-    </div>
-</div>
+                            <span>python</span> <span>Pandas</span> <span>numpy</span>
+                        </div>
+                        <a href="javascript:void(0)" class="project-link" 
+                           onclick="openModal('Airbnb Manhattan Analysis', 
+                           ['Screenshot%202026-05-04%20160209.png', 'Screenshot%202026-05-04%20161256.png', 'Screenshot%202026-05-04%20161211.png', 'Screenshot%202026-05-04%20161007.png', 'Screenshot%202026-05-04%20160826.png'], 
+                           'Detailed insights from cleaning to geographic price distribution.')">
+                            View Analysis →
+                        </a>
+                    </div>
+                </div>
 
-<!-- Project 2: Healthcare -->
-<div class="glass-card project">
-    <div class="project-content">
-        <span class="category">Power BI</span>
-        <h3>Healthcare Dashboard</h3>
-        <p>Comprehensive Power BI solution for medical billing.</p>
-                <div class="tech-stack">
-            <span>Power PI</span> <span>DAX</span> <span>Data Cleaning</span>
-        </div>
-        <!-- ضيف صور الداشبورد هنا (مثلاً صورة للـ Light وصورة للـ Dark) -->
-        <a href="javascript:void(0)" class="project-link" 
-           onclick="openModal('Healthcare BI Dashboard', 
-           ['Screenshot 2026-04-29 231156.png', 'Screenshot 2026-04-29 231234.png', 'Screenshot 2026-04-29 231301.png', 'Screenshot 2026-04-29 232859.png'], 
-           'Monthly variance analysis and department performance tracking.')">
-           View Dashboard →
-        </a>
-    </div>
-</div>
-<!-- Project 3: AI-Driven Inventory Monitoring (Graduation Project) -->
-<div class="glass-card project">
-    <div class="project-content">
-        <span class="category">Excel Project</span>
-        <h3>interactive Dashboard built using Microsoft Excel</h3>
-        <p> Key features:
-Interactive charts, slicers, and filters
-Automated data updates using formulas
-Clean and structured layout for better readability
-Insights that support faster decision-making</p>
-        
-        <div class="tech-stack">
-            <span>Excel</span> <span>Pivot Tables & Pivot Charts</span> <span>Slicers</span> <span>Conditional Formatting</span>
-        </div>
+                <!-- Project 2: Healthcare -->
+                <div class="glass-card project">
+                    <div class="project-content">
+                        <span class="category">Power BI</span>
+                        <h3>Healthcare Dashboard</h3>
+                        <p>Comprehensive Power BI solution for medical billing.</p>
+                        <div class="tech-stack">
+                            <span>Power BI</span> <span>DAX</span> <span>Data Cleaning</span>
+                        </div>
+                        <a href="javascript:void(0)" class="project-link" 
+                           onclick="openModal('Healthcare BI Dashboard', 
+                           ['Screenshot%202026-04-29%20231156.png', 'Screenshot%202026-04-29%20231234.png', 'Screenshot%202026-04-29%20231301.png', 'Screenshot%202026-04-29%20232859.png'], 
+                           'Monthly variance analysis and department performance tracking.')">
+                            View Dashboard →
+                        </a>
+                    </div>
+                </div>
 
-        <!-- هنا تقدر تضيف كذا صورة للمشروع (مثلاً: صورة للـ Detection وصورة للـ Dashboard) -->
-        <a href="javascript:void(0)" class="project-link" 
-           onclick="openModal('AI Inventory System', 
-           ['Screenshot 2026-04-29 233537.png'], 
-           'Key features: Automated data updates, real-time product analysis, and smart replenishment triggers to support faster decision-making.')">
-           Explore Project →
-        </a>
-    </div>
-</div>
+                <!-- Project 3: Excel Dashboard -->
+                <div class="glass-card project">
+                    <div class="project-content">
+                        <span class="category">Excel Project</span>
+                        <h3>Interactive Dashboard built using Microsoft Excel</h3>
+                        <p>Automated updates and smart replenishment insights.</p>
+                        <div class="tech-stack">
+                            <span>Excel</span> <span>Pivot Tables</span> <span>Slicers</span>
+                        </div>
+                        <a href="javascript:void(0)" class="project-link" 
+                           onclick="openModal('Excel Inventory System', 
+                           ['Screenshot%202026-04-29%20233537.png'], 
+                           'Key features: Automated data updates, real-time product analysis, and smart replenishment triggers.')">
+                            Explore Project →
+                        </a>
+                    </div>
+                </div>
 
-                <!-- 3 More project placeholders to complete the 6 cards -->
-               <!-- Project 5: TripAdvisor Hotel Analytics (Tableau) -->
-<div class="glass-card project">
-    <div class="project-content">
-        <span class="category">Tableau Project</span>
-        <h3>TripAdvisor Market Insights</h3>
-        <p>Interactive Tableau dashboard analyzing 21 hotels and user behavior, including global distribution, traveler types, and hotel amenities.</p>
-        
-        <div class="tech-stack">
-            <span>Tableau</span> <span>Data Cleaning</span> <span>Exploratory Data Analysis</span>
-        </div>
-
-        <!-- السلايدر هنا بيدعم كذا صورة للداشبورد -->
-        <a href="javascript:void(0)" class="project-link" 
-           onclick="openModal('TripAdvisor Analytics Dashboard', 
-           ['Screenshot 2026-04-29 234025.png'], 
-           'Key Insights: Visualizing user distribution across continents (North America leading with 295 users), traveler types (Couples, Families, Solo), and seasonal stay patterns.')">
-           View Dashboard →
-        </a>
-    </div>
-</div>
-                <!-- <div class="glass-card project"><div class="project-content"><h3>HardPass Suite</h3><p>Security visualization.</p></div></div>
-                <div class="glass-card project"><div class="project-content"><h3>Market Scraper Pro</h3><p>Competitor tracking.</p></div></div> -->
+                <!-- Project 4: TripAdvisor -->
+                <div class="glass-card project">
+                    <div class="project-content">
+                        <span class="category">Tableau Project</span>
+                        <h3>TripAdvisor Market Insights</h3>
+                        <p>Analyzing 21 hotels and user behavior globally.</p>
+                        <div class="tech-stack">
+                            <span>Tableau</span> <span>EDA</span> <span>Data Cleaning</span>
+                        </div>
+                        <a href="javascript:void(0)" class="project-link" 
+                           onclick="openModal('TripAdvisor Analytics Dashboard', 
+                           ['Screenshot%202026-04-29%20234025.png'], 
+                           'Key Insights: Visualizing user distribution across continents and seasonal patterns.')">
+                            View Dashboard →
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </section>
     </main>
 
     <!-- INTERACTIVE MODAL -->
-   <!-- INTERACTIVE MODAL (Professional Slider) -->
-<div id="projectModal" class="modal">
-    <div class="modal-content glass-card">
-        <span class="close" onclick="closeModal()">&times;</span>
-        
-        <div id="modalBody">
-            <h2 id="modalTitle" style="margin-bottom: 20px; font-weight: 700;">Project Gallery</h2>
-            
-            <div class="slider-container" style="position: relative; background: #000; border-radius: 15px; overflow: hidden;">
-                <!-- الصورة الأساسية -->
-                <img id="mainImg" src="" alt="Project Visual" style="width:100%; display: block; transition: opacity 0.3s ease;">
-                
-                <!-- أزرار التقليب اللي في الصورة -->
-                <div class="slider-nav">
-                    <button class="prev" onclick="changeImage(-1)">❮</button>
-                    <button class="next" onclick="changeImage(1)">❯</button>
+    <div id="projectModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <h2 id="modalTitle" style="margin-bottom: 20px; font-weight: 700;">Project Gallery</h2>
+                <div class="slider-container" style="position: relative; background: #000; border-radius: 15px; overflow: hidden;">
+                    <img id="mainImg" src="" alt="Project Visual" style="width:100%; display: block; transition: opacity 0.3s ease;">
+                    <div class="slider-nav">
+                        <button class="prev" onclick="changeImage(-1)">❮</button>
+                        <button class="next" onclick="changeImage(1)">❯</button>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 15px;">
+                    <div id="imageCounter" style="color: var(--accent); font-size: 0.9rem; margin-bottom: 5px;">Image 1 of 1</div>
+                    <p id="modalDesc" style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5;"></p>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- عداد الصور ووصف المشروع -->
-            <div class="modal-footer" style="margin-top: 15px;">
-                <div id="imageCounter" style="color: var(--accent); font-size: 0.9rem; margin-bottom: 5px;">Image 1 of 3</div>
-                <p id="modalDesc" style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5;"></p>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-note">All the links are for you to contact me</p>
+            <div class="footer-links">
+                <a href="mailto:amir.malak@gmail.com" class="footer-link">Email</a>
+                <a href="https://www.linkedin.com/in/amir-malak-09a656298" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="tel:+201234567890" class="footer-link">My Phone</a>
             </div>
+            <p class="copyright">© 2026 Amir Malak. All rights reserved.</p>
         </div>
-    </div>
-</div>
-<footer>
-    <div class="footer-container">
-        <p class="footer-note">All the links are for you to contact me</p>
-        
-        <div class="footer-links">
-            <a href="mailto:amir.malak@example.com" class="footer-link">Email</a>
-            <a href="https://www.linkedin.com/in/amir-malak-09a656298" target="_blank" class="footer-link">LinkedIn</a>
-            <a href="tel:+201234567890" class="footer-link">My Phone</a>
-        </div>
-        
-        <p class="copyright">© 2026 Amir Malak. All rights reserved.</p>
-    </div>
-</footer>
-<script>
-  let currentImages = [];
-let currentIndex = 0;
+    </footer>
 
-function openModal(title, images, desc) {
-    document.getElementById('modalTitle').innerText = title;
-    document.getElementById('modalDesc').innerText = desc;
-    currentImages = images;
-    currentIndex = 0;
-    
-    updateModalDisplay();
-    document.getElementById('projectModal').style.display = "block";
-    document.body.style.overflow = "hidden"; // منع السكرول
-}
+    <script>
+        let currentImages = [];
+        let currentIndex = 0;
 
-function updateModalDisplay() {
-    const img = document.getElementById('mainImg');
-    const counter = document.getElementById('imageCounter');
-    
-    // تغيير الصورة مع تأثير Fade بسيط
-    img.style.opacity = 0;
-    setTimeout(() => {
-        img.src = currentImages[currentIndex];
-        img.style.opacity = 1;
-    }, 150);
+        function openModal(title, images, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            currentImages = images;
+            currentIndex = 0;
+            updateModalDisplay();
+            document.getElementById('projectModal').style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
 
-    // تحديث العداد (مثلاً: Image 2 of 4)
-    counter.innerText = `Image ${currentIndex + 1} of ${currentImages.length}`;
-}
+        function updateModalDisplay() {
+            const img = document.getElementById('mainImg');
+            const counter = document.getElementById('imageCounter');
+            img.style.opacity = 0;
+            setTimeout(() => {
+                img.src = currentImages[currentIndex];
+                img.style.opacity = 1;
+            }, 150);
+            counter.innerText = `Image ${currentIndex + 1} of ${currentImages.length}`;
+        }
 
-function changeImage(step) {
-    currentIndex += step;
-    if (currentIndex >= currentImages.length) currentIndex = 0;
-    if (currentIndex < 0) currentIndex = currentImages.length - 1;
-    updateModalDisplay();
-}
+        function changeImage(step) {
+            currentIndex += step;
+            if (currentIndex >= currentImages.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = currentImages.length - 1;
+            updateModalDisplay();
+        }
 
-function closeModal() {
-    document.getElementById('projectModal').style.display = "none";
-    document.body.style.overflow = "auto";
-}
-</script>
+        function closeModal() {
+            document.getElementById('projectModal').style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    </script>
 </body>
 </html>
